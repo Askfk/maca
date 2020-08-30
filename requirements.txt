@@ -1,6 +1,5 @@
 tensorflow == 2.3.0
 scipy
-shutil
 numpy
 os
 datetime
