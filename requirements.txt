@@ -1,26 +1,10 @@
 tensorflow == 2.3.0
 scipy
 numpy
-os
-datetime
-re
-collections
-sys
-subprocess
-tempfile
-threading
-copy
-colorsys
-itertools
-random
 matplotlib
 skimage
-pytest-shutil
-distutils
-warnings
 urlib
 absl
-json
 pycocotools
 six
 keras_applications
