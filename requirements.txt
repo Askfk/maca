@@ -1,0 +1,27 @@
+tensorflow == 2.3.0
+scipy
+shutil
+numpy
+os
+datetime
+re
+collections
+sys
+subprocess
+tempfile
+threading
+copy
+colorsys
+itertools
+random
+matplotlib
+skimage
+shutil
+distutils
+warnings
+urlib
+absl
+json
+pycocotools
+six
+keras_applications
