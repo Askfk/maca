@@ -16,7 +16,7 @@ itertools
 random
 matplotlib
 skimage
-shutil
+pytest-shutil
 distutils
 warnings
 urlib
