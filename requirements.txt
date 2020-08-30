@@ -2,9 +2,9 @@ tensorflow == 2.3.0
 scipy
 numpy
 matplotlib
-skimage
 urllib3
 absl-py
 pycocotools
+pillow
 six
 keras_applications
