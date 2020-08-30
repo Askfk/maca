@@ -3,8 +3,8 @@ scipy
 numpy
 matplotlib
 skimage
-urlib
-absl
+urllib3
+absl-py
 pycocotools
 six
 keras_applications
