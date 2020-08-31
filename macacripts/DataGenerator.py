@@ -3,8 +3,8 @@
 import numpy as np
 from tensorflow import keras
 
-from macacripts.utils import compute_backbone_shapes
-from macacripts import utils_graph, utils
+from .utils import compute_backbone_shapes
+from . import utils_graph, utils
 
 
 def load_image_gt(dataset, config, image_id, augmentation=None):

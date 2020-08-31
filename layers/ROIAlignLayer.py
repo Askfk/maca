@@ -2,7 +2,7 @@
 
 import tensorflow as tf
 from tensorflow import keras
-from macacripts import utils_graph
+from ..macacripts import utils_graph
 
 
 def log2_graph(x):

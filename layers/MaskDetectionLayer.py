@@ -2,7 +2,7 @@
 
 import tensorflow as tf
 from tensorflow import keras
-from macacripts import utils_graph, utils
+from ..macacripts import utils_graph, utils
 
 
 def refine_detections_graph(rois, probs, deltas, window, config):

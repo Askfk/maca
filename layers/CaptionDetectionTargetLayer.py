@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 
 from macacripts import utils_graph, utils
-from layers.MaskDetectionTargetLayer import overlaps_graph, trim_zeros_graph
+from .MaskDetectionTargetLayer import overlaps_graph, trim_zeros_graph
 
 
 def detection_targets_graph(proposals, gt_boxes, gt_captions, gt_scores, config):

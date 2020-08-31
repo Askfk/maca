@@ -1,6 +1,6 @@
 """Build efficient bottom-up networks."""
 
-from BackBones import EfficientNet, ResNet, VGGNet
+from . import EfficientNet, ResNet, VGGNet
 
 
 def build_backbone_net_graph(input_tensor, architecture, config=None):

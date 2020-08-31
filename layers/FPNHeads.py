@@ -1,7 +1,7 @@
 """Build FPN heads."""
 
 from tensorflow import keras
-from layers.BatchNorm import BatchNorm
+from .BatchNorm import BatchNorm
 
 
 def build_fpn_bs_graph(rois, pool_size, task, train_bn=False,

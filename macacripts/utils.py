@@ -12,7 +12,7 @@ import warnings
 import scipy
 import urllib.request
 
-COCO_MODEL_URL = "https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5"
+COCOVG_MODEL_URL = "https://github.com/Askfk/maca/releases/tag/v1/maca_cocovg.hdf5"
 
 
 def log(text, array=None):
@@ -31,14 +31,14 @@ def log(text, array=None):
     print(text)
 
 
-def download_trained_weights(coco_model_path, verbose=1):
+def download_trained_weights(cocovg_model_path, verbose=1):
     """Download COCO trained weights from Releases.
 
     coco_model_path: local path of COCO trained weights
     """
     if verbose > 0:
-        print("Downloading pretrained model to " + coco_model_path + " ...")
-    with urllib.request.urlopen(COCO_MODEL_URL) as resp, open(coco_model_path, 'wb') as out:
+        print("Downloading pretrained model to " + cocovg_model_path + " ...")
+    with urllib.request.urlopen(COCOVG_MODEL_URL) as resp, open(cocovg_model_path, 'wb') as out:
         shutil.copyfileobj(resp, out)
     if verbose > 0:
         print("... done downloading pretrained model!")

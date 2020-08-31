@@ -4,7 +4,7 @@
 import tensorflow as tf
 from tensorflow import keras
 
-from macacripts import utils_graph, utils
+from ..macacripts import utils_graph, utils
 
 
 def overlaps_graph(boxes1, boxes2):

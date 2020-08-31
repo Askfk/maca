@@ -6,20 +6,20 @@ import datetime
 import re
 from collections import OrderedDict
 
-from layers.ROIAlignLayer import ROIAlign
-from BackBones.backbone import build_backbone_net_graph
-from layers.RPNModel import build_rpn_model
-from layers.ProposalLayer import ProposalLayer
-from layers.FPNHeads import build_fpn_bs_graph, fpn_classifier_graph, build_fpn_mask_graph
-from layers.MaskDetectionTargetLayer import MaskDetectionTargetLayer
-from layers.CaptionDetectionTargetLayer import CaptionDetectionTargetLayer
-from layers.CaptionLayer import build_caption_layer_graph
-from macacripts.DataGenerator import DataGenerator
+from .BackBones.backbone import build_backbone_net_graph
 
-from layers.CaptionDetectionLayer import CaptionDetectionLayer
-from layers.MaskDetectionLayer import MaskDetectionLayer
+from .layers.ROIAlignLayer import ROIAlign
+from .layers.RPNModel import build_rpn_model
+from .layers.ProposalLayer import ProposalLayer
+from .layers.FPNHeads import build_fpn_bs_graph, fpn_classifier_graph, build_fpn_mask_graph
+from .layers.MaskDetectionTargetLayer import MaskDetectionTargetLayer
+from .layers.CaptionDetectionTargetLayer import CaptionDetectionTargetLayer
+from .layers.CaptionLayer import build_caption_layer_graph
+from .layers.CaptionDetectionLayer import CaptionDetectionLayer
+from .layers.MaskDetectionLayer import MaskDetectionLayer
 
-from macacripts import losses, utils_graph, utils
+from .macacripts.DataGenerator import DataGenerator
+from .macacripts import losses, utils_graph, utils
 
 tf.compat.v1.disable_eager_execution()
 

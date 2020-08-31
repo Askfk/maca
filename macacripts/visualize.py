@@ -27,8 +27,8 @@ ROOT_DIR = os.path.abspath("../")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
-from macacripts import utils
-from config import Config
+from . import utils
+from ..config import Config
 
 
 ############################################################

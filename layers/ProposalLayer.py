@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.python.eager import context
 import numpy as np
-from macacripts import utils_graph, utils
+from ..macacripts import utils_graph, utils
 
 
 class ProposalLayer(keras.layers.Layer):
