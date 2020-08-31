@@ -44,6 +44,19 @@ def download_trained_weights(cocovg_model_path, verbose=1):
         print("... done downloading pretrained model!")
 
 
+def download_dataset(dataset_path, verbose=1):
+    """Download COCO trained weights from Releases.
+
+    coco_model_path: local path of COCO trained weights
+    """
+    if verbose > 0:
+        print("Downloading dataset to " + dataset_path + " ...")
+    with urllib.request.urlopen(COCOVG_MODEL_URL) as resp, open(dataset_path, 'wb') as out:
+        shutil.copyfileobj(resp, out)
+    if verbose > 0:
+        print("... done downloading dataset!")
+
+
 # ## Batch Slicing
 # Some custom layers support a batch size of 1 only, and require a lot of work
 # to support batches greater than 1. This function slices an input tensor
