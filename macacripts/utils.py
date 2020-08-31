@@ -13,6 +13,7 @@ import scipy
 import urllib.request
 
 COCOVG_MODEL_URL = "https://github.com/Askfk/maca/releases/download/v1/maca_cocovg.hdf5"
+COCOVG_DATASET_URL = "https://github.com/Askfk/maca/releases/download/v1/cocovg.zip"
 
 
 def log(text, array=None):
@@ -38,7 +39,7 @@ def download_trained_weights(cocovg_model_path, verbose=1):
     """
     if verbose > 0:
         print("Downloading pretrained model to " + cocovg_model_path + " ...")
-    with urllib.request.urlopen(COCOVG_MODEL_URL) as resp, open(cocovg_model_path, 'wb') as out:
+    with urllib.request.urlopen(COCOVG_DATASET_URL) as resp, open(cocovg_model_path, 'wb') as out:
         shutil.copyfileobj(resp, out)
     if verbose > 0:
         print("... done downloading pretrained model!")
