@@ -12,7 +12,7 @@ import warnings
 import scipy
 import urllib.request
 
-COCOVG_MODEL_URL = "https://github.com/Askfk/maca/releases/tag/v1/maca_cocovg.hdf5"
+COCOVG_MODEL_URL = "https://github.com/Askfk/maca/releases/download/v1/maca_cocovg.hdf5"
 
 
 def log(text, array=None):

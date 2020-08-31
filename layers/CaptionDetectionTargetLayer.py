@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 
-from macacripts import utils_graph, utils
+from ..macacripts import utils_graph, utils
 from .MaskDetectionTargetLayer import overlaps_graph, trim_zeros_graph
 
 

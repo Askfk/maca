@@ -1,5 +1,5 @@
-from config import Config
-from Dataset import Dataset
+from ..config import Config
+from .Dataset import Dataset
 
 from pycocotools import mask as maskUtils
 
