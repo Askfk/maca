@@ -6,4 +6,5 @@ pillow
 absl-py
 pycocotools
 six
+imutils
 keras_applications
