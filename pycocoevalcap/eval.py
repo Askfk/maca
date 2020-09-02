@@ -11,13 +11,10 @@ def eval(gts,res):
     scorer = Cider()
     s2, _ = scorer.compute_score(gts, res)
 
-    scorer = Meteor()
-    s3, _ = scorer.compute_score(gts, res)
-
     scorer = Rouge()
     s4, _ = scorer.compute_score(gts, res)
 
-    return {'bleu':s1,'cider':s2,'meteor':s3,'rouge':s4}
+    return {'bleu':s1,'cider':s2,'rouge':s4}
 
 
 def get_bleu(gts,res):
