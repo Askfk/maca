@@ -215,8 +215,6 @@ class Config(object):
     # Gradient norm clipping
     GRADIENT_CLIP_NORM = 5.0
 
-    # Caption Part Paramters
-
     TOKENIZER = None
 
     EMBEDDING_DIM = 256

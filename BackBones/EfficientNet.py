@@ -698,7 +698,6 @@ class EfficientNetX(tf.keras.models.Model):
 
 
 if __name__ == "__main__":
-    from macacnn_improvement.config import Config
 
     inputs = tf.keras.layers.Input([1024, 1024, 3])
     efficientnet = EfficientNetB3(include_top=False, input_tensor=inputs)
