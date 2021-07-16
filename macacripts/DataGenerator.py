@@ -405,7 +405,7 @@ if __name__ == '__main__':
 
     config = CocoVGConfig()
     dataset = CocoVGDataset()
-    dataset.initalize_dataset('/Users/liyiming/Desktop/Birmingham Life/project/DATASET/COCOVG', 'train')
+    dataset.initalize_dataset('/Users/project/DATASET/COCOVG', 'train')
     dataset.prepare()
 
     dg = DataGenerator(dataset, config, shuffle=True)
